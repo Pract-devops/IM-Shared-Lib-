@@ -1,4 +1,4 @@
-de call(tomcatip,tomcatusr,finalWarName ){
+// de call(tomcatip,tomcatusr,finalWarName ){
  sh "mv target/myweb*.war target/${finalWarName}.war"
                 sshagent(credentials: ['slave-one'], ignoreMissing: true) {
                          // some block
