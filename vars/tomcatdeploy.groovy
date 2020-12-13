@@ -1,4 +1,5 @@
-// def call(tomcatip,tomcatusr,finalWarName ){
+// tomcat deploy 
+def call(tomcatip,tomcatusr,finalWarName ){
  sh "mv target/myweb*.war target/${finalWarName}.war"
                 sshagent(credentials: ['slave-one'], ignoreMissing: true) {
                          // some block
